@@ -1,0 +1,185 @@
+@import "style.css";
+/*ESTILIZANDO NEWS.PHP*/
+* {
+  font-weight: normal;
+}
+/*BOOT CSS*/
+
+/* TEXT COLORS*/
+.whiteText {
+  color: white;
+}
+.purple {
+  color: #333864;
+}
+.color646464 {
+  color: #646464;
+  font-weight: lighter;
+}
+.grayDDD {
+  background: #DDD;
+}
+.redF40B5C {
+  background: #F40B5C;
+}
+.bgPurple {
+  background: #333864;
+}
+/*FIM  COLORS*/
+
+
+/*BORDERS*/
+.border220 {
+  border: 1px solid rgb(220,220,220);
+}
+/*FIM BORDERS*/
+
+/*HEIGHTS*/
+.height40 {
+  height: 40px;
+}
+/*FIM HEIGHTS*/
+
+/*FONT SIZE*/
+.font18 {
+  font-size: 18px;
+}
+.fontTitle {
+  font-size: 23px;
+  font-weight: bold;
+}
+.fontSubTitle {
+  font-size: 21px;
+}
+.fSmall {
+  font-size: 15px;
+}
+/*FONT SIZE*/
+
+/*TITULOS*/
+.mainTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+/*FIM TITULOS*/
+
+/*PADDINGS*/
+.padding40_0 {
+  padding: 40px 0;
+}
+.padding50_0 {
+  padding: 50px 0;
+}
+.padding15 {
+  padding: 15px;
+}
+.paddingLeft8 {
+  padding-left: 8px;
+}
+/*FIM PADDINGS*/
+
+/*WIDTHS*/
+.w100 {
+  width: 100%;
+}
+/*FIM WIDTHS*/
+
+/*BUTTONS*/
+.btnGeneral {
+  cursor: pointer;
+  border: 0;
+  width: 115px;
+  height: 35px;
+}
+/*FIM BUTTONS*/
+
+/*INPUTS*/
+.generalInput {
+  width: 100%;
+  height: 40px;
+}
+/*FIM INPUTS*/
+
+/*MARGINS*/
+.margin10_0 {
+  margin: 10px 0;
+}
+/*FIM MARGINS*/
+
+/*Text Align*/
+.textCenter {
+  text-align: center;
+}
+/*Fim Text Align*/
+/*.clear {
+  clear: both;
+}*/
+
+/*FIM BOOT CSS*/
+/* ******headerNews****** */
+.headerNews {
+  width: 100%;
+  /*padding: 40px 0;*/
+}
+/* ******Fim headerNews****** */
+
+/* containerPortal*/
+
+.sidebar {
+  float: left;
+  width: 30%;
+}
+.contentSidebar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.boxAuthor {
+  margin-top: 10px;
+}
+.imgAuthor {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+/*Fim containerPortal*/
+
+/*contentNews*/
+.contentNews {
+  float: left;
+  width: 70%;
+  padding: 0 2%;
+}
+.contentHeader h2 > span {
+  border-bottom: 5px solid #333864;
+}
+.news {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.news p {
+  margin-top: 8px;
+}
+.news a{
+  display: block;
+  background: #00B95C;
+  margin-top: 8px;
+  padding: 0 3px;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+/*Fim contentNews*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    .contentNews,
+    .sidebar {
+      width: 100%;
+    }
+
+  }

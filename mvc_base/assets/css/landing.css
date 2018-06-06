@@ -1,0 +1,25 @@
+@import "variables.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: var(--w100);
+}
+/*BOOT CSS*/
+.bgColor {
+  background: var(--color6);
+}
+.fColor {
+  color: var(--color7);	
+}
+/*FIM BOOT CSS*/
+.center {
+  width: var(--size900);
+  margin: var(--positionCenter);
+}
+.header {
+  width: var(--w100);
+  height: var(--size70);
+}

@@ -1,0 +1,59 @@
+/*Criando as variáveis*/
+:root {
+  /*Sizes*/
+  --w48: 48%;
+  --w100: 100%;
+  --w33: 33.3%;
+  /*End Sizes*/
+
+  /*HEIGHTS*/
+  --sizeZero: 0;
+  --size1: 1px;
+  --size5: 5px;
+  --size8: 8px;
+  --size10: 10px;
+  --size15: 15px;
+  --size16: 16px;
+  --size17: 17px;
+  --size20: 20px;
+  --size35: 35px;
+  --size40: 40px;
+  --size60: 60px;
+  --size70: 70px;
+  --size115: 115px;
+  --size900: 900px;
+  --sizeAuto: auto;
+  /*END HEIGHTS*/
+
+  /*Align*/
+  --textCenter: center;
+  --left: left;
+  --right: right;
+  --positionCenter: 0 auto;
+  /*End Align*/
+
+  /*COLORS*/
+  --color1: #333864;
+  --color2: #DDD;
+  --color3: #F40B5C;
+  --color4: #646464;
+  --color5: #212343;
+  --color6: black;
+  --color7: white;
+  --color8: orangered;
+  --color9: orange;
+  --color10: yellow;
+  --color11: #DCDCDC;
+  --color12: #ccc;
+  --color13: #FFDAB9; /*PeachPuff1*/
+  --color14: #EECBAD; /*PeachPuff2*/
+  /*END COLORS*/
+
+  /*FONTS*/
+  --fLighter: lighter;
+  --fBold: bold;
+  --fNormal: normal;
+  --fUppercase: uppercase;
+  --fLowercase: lowercase;
+  /*END FONTS*/
+}

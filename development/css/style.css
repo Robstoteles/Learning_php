@@ -1,0 +1,245 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #926239;
+  line-height: 1.6;
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
+
+/*Estilizando o Slide*/
+.inner,
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  /*margin: auto;*/
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  max-width: 800px;
+  text-align: center;
+  margin: 15% auto;
+}
+.content h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0 0 300px #000;
+  font-size: 300%;
+}
+.content p {
+  font-size: 120%;
+  color: #F9F3F4;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.button {
+  font-size: 17px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #31c49e;
+  color: #fff;
+}
+/*Fim Slide*/
+
+/*Estilizando o modal*/
+.qualquer {
+  position: relative;
+}
+.window{
+    display:none;
+    width:300px;
+    height:450px;
+    position:absolute;
+    left:50%;
+    margin-left: -150px;
+    margin-top: -300px;
+    background: rgba(255,255,255, .8);/*#FFF;*/
+    z-index:40;
+    padding:10px;
+    border-radius:10px;
+}
+.window h4 {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.window p {
+  font-size: 15px;
+  text-align: justify;
+  color: black;
+  padding: 3px 5px;
+  text-transform: capitalize;
+}
+.window span {
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+/*Removendo a borda azul do botão quando é clicado*/
+.window button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+/*Fim remoção da borda azul*/
+#janela1 {
+  overflow-y: auto;
+}
+#mascara,
+#contato {
+    width: 100%;
+    height: 100%;
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:30;
+    background: rgba(0,0,0, 0.5);
+}
+
+.fechar{display:block; text-align:right;}
+
+#mascara:target,
+#contato:target {
+  display: block;
+}
+
+#mascara:target ~ #janela1,
+#contato:target ~ #janela2 {
+  display: inline-block;
+  transition: all 1.2s;
+  transition-delay: 1.1s;
+}
+/*Fim modal*/
+
+/*Estilizando a galeria*/
+.galery-container {
+  width: 900px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: auto;
+  background: #ccc;
+  border-radius: 10px;
+}
+.galery-container h1 {
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 20px;
+}
+.galery {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.galery li {
+  float: left;
+  width: 170px;
+  display: block;
+  margin-right: 20px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.galery ul li img {
+  width: 200px;
+  height: 200px;
+}
+/*Fim galeria*/
+
+
+/*Media Queries*/
+@media screen and (max-width: 1000px) {
+  .window {
+    /*margin-left: -125px;*/
+    margin-top: -250px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .content h1 {
+      font-size: 210%;
+    }
+    .button {
+      font-size: 110%;
+      padding: 7px 15px;
+    }
+    p {
+      font-size: 100%;
+    }
+    img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .window{
+        /*margin-left: -100px;*/
+        margin-top: -200px;
+        padding: 8px;
+        height: 350px;
+    }
+    .window p{
+      font-size: 13px;
+    }
+    .window span {
+      font-size: 15px;
+    }
+}
+@media screen and (max-width: 540px) {
+  .window{
+      /*margin-left: -95px;*/
+      margin-top: -190px;
+      padding: 8px;
+  }
+
+}
+@media screen and (max-width: 380px) {
+    .content h1 {
+      font-size: 180%;
+    }
+    .button {
+      font-size: 100%;
+      padding: 7px 15px;
+    }
+    p {
+      font-size: 95%;
+    }
+    img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    .window{
+        /*margin-left: -95px;*/
+        margin-top: -150px;
+        padding: 6px;
+        height: 300px;
+    }
+    .window h4 {
+      font-size: 15px;
+    }
+    .window p{
+      font-size: 11px;
+    }
+    .window span {
+      font-size: 13px;
+    }
+}
